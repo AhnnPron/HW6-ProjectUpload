@@ -43,8 +43,15 @@ public class Node
                 //in the Linked List.  Update this to remove myself from the linked list
                 //and then ask the list to display itself, which should update the entire
                 //view.  That is to say, we will no longer need to hide ourself.
+
+
                 System.out.println("***** Text Was Clicked: " + payload);
-                valueLabel.setVisibility(View.GONE);
+                //delete node
+                if (v == valueLabel);
+                {
+                    (myself) = null;
+                }
+                ListCore.ll.display();
                 System.out.println("**** Position = " + ListCore.ll.indexOf(myself));
 
             }
